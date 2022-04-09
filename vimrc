@@ -5,7 +5,7 @@ set undolevels=1000
 set undoreload=10000
 set nocompatible
 set autoread
-set number
+" set number
 set nopaste
 set autoindent
 set expandtab
@@ -22,6 +22,7 @@ set ignorecase smartcase
 set cursorline
 set showcmd
 set expandtab
+colorscheme ron
 syntax on
 filetype plugin indent on
 
