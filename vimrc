@@ -9,12 +9,13 @@ set autoread
 set nopaste
 set autoindent
 set expandtab
-"set copyindent
+set copyindent
 set tabstop=4
 set shiftwidth=4
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+set nofixendofline
 
 set history=10000
 set ignorecase smartcase
