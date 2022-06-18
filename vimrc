@@ -5,6 +5,7 @@ set undolevels=1000
 set undoreload=10000
 set nocompatible
 set autoread
+set spell
 " set number
 set nopaste
 set autoindent
