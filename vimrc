@@ -19,13 +19,14 @@ set nofixendofline
 
 set history=10000
 set ignorecase smartcase
-" highlight current line
 set cursorline
 set showcmd
 set expandtab
 colorscheme ron
 syntax on
 filetype plugin indent on
+
+map <F11> <ESC>:NERDTreeToggle<CR>
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -45,7 +46,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'VundleVim/Vundle.vim'
 Plug 'scrooloose/nerdtree'
 
-
 call plug#end()
 
 function! WrapForTmux(s)
@@ -62,11 +62,4 @@ endfunction
 let &t_SI .= WrapForTmux("\<Esc>[?2004h")
 let &t_EI .= WrapForTmux("\<Esc>[?2004l")
 
-function! XTermPasteBegin()
-  set pastetoggle=<Esc>[201~
-  set paste
-  return ""
-endfunction
-
-inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
