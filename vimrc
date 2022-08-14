@@ -17,6 +17,8 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 set nofixendofline
+set ttimeoutlen=0
+set timeoutlen=1000
 
 set history=10000
 set ignorecase smartcase
@@ -29,6 +31,7 @@ filetype plugin indent on
 
 map Y ^vg_
 map <F11> <ESC>:NERDTreeToggle<CR>
+inoremap jh <Esc>
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -45,23 +48,8 @@ endif
 
 " My plugins
 Plug 'vim-airline/vim-airline'
-Plug 'VundleVim/Vundle.vim'
 Plug 'scrooloose/nerdtree'
 
 call plug#end()
-
-function! WrapForTmux(s)
-  if !exists('$TMUX')
-    return a:s
-  endif
-
-  let tmux_start = "\<Esc>Ptmux;"
-  let tmux_end = "\<Esc>\\"
-
-  return tmux_start . substitute(a:s, "\<Esc>", "\<Esc>\<Esc>", 'g') . tmux_end
-endfunction
-
-let &t_SI .= WrapForTmux("\<Esc>[?2004h")
-let &t_EI .= WrapForTmux("\<Esc>[?2004l")
 
 
