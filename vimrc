@@ -27,6 +27,7 @@ colorscheme ron
 syntax on
 filetype plugin indent on
 
+map Y ^vg_
 map <F11> <ESC>:NERDTreeToggle<CR>
 
 if empty(glob('~/.vim/autoload/plug.vim'))
