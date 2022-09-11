@@ -25,7 +25,6 @@ set ignorecase smartcase
 set cursorline
 set showcmd
 set expandtab
-colorscheme ron
 syntax on
 filetype plugin indent on
 
@@ -49,6 +48,7 @@ endif
 " My plugins
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
+Plug 'numirias/semshi'
 
 call plug#end()
 
