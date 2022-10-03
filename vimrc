@@ -19,7 +19,7 @@ set wrap "Wrap lines
 set nofixendofline
 set ttimeoutlen=0
 set timeoutlen=1000
-
+set mouse=a
 set history=10000
 set ignorecase smartcase
 set cursorline
@@ -30,6 +30,19 @@ filetype plugin indent on
 
 map Y ^vg_
 map <F11> <ESC>:NERDTreeToggle<CR>
+"keep cursor in the middle all the time :)
+nnoremap k kzz
+nnoremap j jzz
+nnoremap p pzz
+nnoremap P Pzz
+nnoremap G Gzz
+nnoremap x xzz
+inoremap <ESC> <ESC>zz
+nnoremap <ENTER> <ENTER>zz
+inoremap <ENTER> <ENTER><ESC>zzi
+nnoremap o o<ESC>zza
+nnoremap O O<ESC>zza
+nnoremap a a<ESC>zza
 inoremap jh <Esc>
 
 if empty(glob('~/.vim/autoload/plug.vim'))
