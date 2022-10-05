@@ -40,8 +40,6 @@ nnoremap x xzz
 inoremap <ESC> <ESC>zz
 nnoremap <ENTER> <ENTER>zz
 inoremap <ENTER> <ENTER><ESC>zzi
-nnoremap o o<ESC>zza
-nnoremap O O<ESC>zza
 nnoremap a a<ESC>zza
 inoremap jh <Esc>
 
@@ -64,5 +62,3 @@ Plug 'scrooloose/nerdtree'
 Plug 'numirias/semshi'
 
 call plug#end()
-
-
