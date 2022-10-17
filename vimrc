@@ -37,6 +37,8 @@ nnoremap p pzz
 nnoremap P Pzz
 nnoremap G Gzz
 nnoremap x xzz
+nnoremap n nzz
+nnoremap N Nzz
 inoremap <ESC> <ESC>zz
 nnoremap <ENTER> <ENTER>zz
 inoremap <ENTER> <ENTER><ESC>zzi
