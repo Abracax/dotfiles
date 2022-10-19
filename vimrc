@@ -64,3 +64,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'numirias/semshi'
 
 call plug#end()
+
+g:ctrlp_use_caching = 0
+
