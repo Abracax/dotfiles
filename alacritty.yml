@@ -10,3 +10,5 @@ env:
 key_bindings:
     - { key: F,  mods: Alt,           chars: "\x1bf"                       }
     - { key: B,  mods: Alt,           chars: "\x1bb"                       }
+    - { key: C,  mods: Super,         action: Copy                         }
+    - { key: V,  mods: Super,         action: Paste                         }
