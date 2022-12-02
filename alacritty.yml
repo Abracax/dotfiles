@@ -5,6 +5,16 @@ window:
      lines: 300
 font:
   size: 12.0
+  normal:
+    family: "FiraCode Nerd Font"
+    style: Retina
+  bold:
+    family: "FiraCode Nerd Font"
+    style: Medium
+  italic:
+    family: "FiraCode Nerd Font"
+    style: "Medium Italic"
+
 env:
   TERM: xterm-256color
 key_bindings:
